@@ -2,10 +2,20 @@
 
 // create an array with all possible character types: Uppercase, Lowercase, numbers, and symbols stored in a variable
 
-// create a global variable called "pwLength" with a number between 10 and 18
+let myPassWord = ['a','b','c','d','e','f','E','R','U','P','#','*','+','W','Y','U','D','3','8','9'];
+let pwLength = 12;
+ 
+const addNewPassword= ()=> {
+    let passWordHolder = '';
+    const characterLength = myPassWord.length
 
-// Using the above array and password length variable, create a random password using a for loop inside of a function called "addNewPassword" either saved as an arrow function variable or a traditional function
-
+    for (let i=0; i<pwLength; i++){
+    passWordHolder += myPassWord[Math.floor(Math.random() * characterLength)]
+    }
+    return passWordHolder;
+}
+addNewPassword();
+ 
 // ========= ⬇ DO NOT TOUCH THIS CODE ⬇ ======
 
 let genBtn = document.getElementById("btnGen");
