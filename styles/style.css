@@ -10,7 +10,7 @@
    
    body {
     /*background-color: #000000;*/
-     background-image: url(/image/foofighter.jpg);
+     background-image: url("../image/foofighter.jpg");
      background-size: cover;
      justify-content:left;
      align-items: left;
